@@ -25,7 +25,7 @@ Bugsnag.notifyReleaseStages = ["production", "staging"];
 <meta name="keywords" content="career guidance how to negotiate a pay raise decide your career path changing">
 
 
-<meta property="og:title" content="The Daily Muse | Career Advice and Articles From The Muse">
+<meta property="og:title" content="The Daily Muse | Career Advice and Articles From YouEnrol.me">
 
 <meta property="og:image" content="https://tm-prod.global.ssl.fastly.net/images/CompanyMuseLogo.jpg?v=None">
 
@@ -58,7 +58,7 @@ pilbox_host: "https://tm-pilbox.global.ssl.fastly.net"
 };
 
 
-var hideBx = muse.auth;
+var hideBx = youenrol.me.auth;
 
 </script>
 <!-- For Windows Phone 8 and Internet Explorer 10 -->
@@ -78,12 +78,12 @@ includeReferrer: true
 });
 
 
-amplitude.identify(new amplitude.Identify().set("signed_in", muse.auth));
+amplitude.identify(new amplitude.Identify().set("signed_in", youenrol.me.auth));
 
 try {
-muse.track = amplitude.logEvent;
+youenrol.me.track = amplitude.logEvent;
 } catch (e) {
-muse.track = function() {};
+youenrol.me.track = function() {};
 }
 </script>
 
@@ -114,7 +114,7 @@ blueshift.identify(bsProps);
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-29372519-1', 'themuse.com');
+ga('create', 'UA-29372519-1', 'youenrol.com');
 ga('send', 'pageview');
 </script>
 
@@ -149,18 +149,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <header class="header">
 
 <div class="header-container">
-<a class="the-muse-logo" alt="Free Career Advice" href="/"><span>YouEnrol.</span>me</a>
+<a class="the-youenrol.me-logo" alt="Free Career Advice" href="/"><span>YouEnrol.</span>me</a>
 
 <div class="user-nav">
 
-<div class="sign-in-wrapper right hidden-xs">
-<a class="sign-in-modal dropdown-toggle" href="#">Login</a>
+<div class="log-in-wrapper right hidden-xs">
+<a class="log-in-modal dropdown-toggle" href="#">Login</a>
 </div>
-<div id="sign-up" class="sign-up visible-xs">
-<a class="btn-sign-up sign-up-modal" href="/user/register/">Login&nbsp;&nbsp;/&nbsp;&nbsp;Register</a>
+<div id="regist-er" class="regist-er visible-xs">
+<a class="btn-regist-er regist-er-modal" href="/user/register/">Login&nbsp;&nbsp;/&nbsp;&nbsp;Register</a>
 </div>
-<div id="sign-up" class="sign-up hidden-xs">
-<a class="btn-sign-up sign-up-modal" href="/user/register/">Register</a>
+<div id="regist-er" class="regist-er hidden-xs">
+<a class="btn-regist-er regist-er-modal" href="/user/register/">Register</a>
 </div>
 
 </div>
