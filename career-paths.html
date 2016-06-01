@@ -47,19 +47,8 @@
 <link href="css/bootstrap-social.css" rel="stylesheet" media="screen, projection">
 <link href="css/explore-companies.css" rel="stylesheet" media="screen, projection">
 
-a<!-- CSS for career paths carousel slider -->
-<style type="text/css">
-.carousel{
-    background: #ffffff;
-    margin-top: 20px;
-}
-.carousel .item img{
-    margin: 0 auto; /* Align slide image horizontally center */
-}
-.bs-example{
-	margin: 20px;
-}
-</style>
+
+
 
 <script language="JavaScript" type="text/javascript" src="js/jquery.js"></script>
 <script language="JavaScript" type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -169,7 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <!-- Carousel slider starts -->
-<div class="bs-example">
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
@@ -178,9 +167,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
             <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
         </ol>   
         <!-- Wrapper for carousel items -->
-        <section class="muse-carousel type-companies">
+        <div class="carousel-inner muse-carousel type-companies">
         	<div class="muse-slider" style="-webkit-transition: -webkit-transform 400ms; -webkit-transform: translateX(0%);-moz-transition: -moz-transform 400ms; -moz-transform: translateX(0%);-ms-transition: -ms-transform 400ms; -ms-transform: translateX(0%);-o-transition: -o-transform 400ms; -o-transform: translateX(0%);transition: transform 400ms; transform: translateX(0%);">
 
 <div class="muse-cell" style="left: -100%" class="active"><div><div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><div class="featured-company"><a class="museone-slider-item" href="/companies/taboola?ref=carousel-slide-0" data-tile-link="true"><div class="tile-bg"><div class="mobile-overlay"></div><img src="https://tm-prod.global.ssl.fastly.net/uploaded/companies/543/f1.jpg"></div><div class="tile-copy"><h2>Taboola</h2></div></a><div class="favorite-container"><div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div></div></div></div></div>
@@ -203,7 +193,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div><div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><div class="featured-company"><a class="museone-slider-item" href="/companies/att?ref=carousel-slide-1" data-tile-link="true"><div class="tile-bg"><div class="mobile-overlay"></div><img src="https://tm-prod.global.ssl.fastly.net/uploaded/companies/862/f1.jpg"></div><div class="tile-copy"><h2>AT&amp;T</h2></div></a><div class="favorite-container"><div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div></div></div></div></div>
 
-</div></div></section></div>
+</div></div></div></div>
 
 
         <!-- Carousel controls -->
@@ -213,7 +203,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a class="carousel-arrows arrow-right" href="#myCarousel" data-slide="next">
             <i class="fa fa-chevron-right"></i>
         </a>
-    </div>
+    
 </div>
 
 </main>
