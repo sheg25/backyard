@@ -293,11 +293,11 @@ youenrol.track("Company Landing Page Loaded");
 <script>
 
 $(function () {
-    $(".element").slice(0, 4).show();
+    $(".block img").slice(0, 4).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
-        $(".element:hidden").slice(0, 4).slideDown();
-        if ($(".element:hidden").length == 0) {
+        $(".block img:hidden").slice(0, 4).slideDown();
+        if ($(".block img:hidden").length == 0) {
             $("#load").fadeOut('slow');
         }
         $('html,body').animate({
