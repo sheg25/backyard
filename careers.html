@@ -46,6 +46,14 @@
 .expand{
 	display: none;
 }
+
+#loadMore {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: ##32c0c6;
+}
+
 .totop {
     position: fixed;
     bottom: 10px;
@@ -55,10 +63,20 @@
     display: none;
 }
 
+.totop a, a:visited {
+    color: #33739E;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+.totop a:hover {
+    text-decoration: none;
+}
+
 </style>
 
 <script type="text/javascript">
-var youenrol.me = {
+var youenrol = {
 auth: false
 };
 var metadata = {"error_code": 8, "status_code": 400, "error": "Missing url"};
