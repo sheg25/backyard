@@ -1,0 +1,48 @@
+{
+  "author": "The Muse <yusuf@themuse.com> (https://www.themuse.com/)",
+  "name": "mithril-coat",
+  "description": "A minimalistic frontend web framework that builds on Mithril",
+  "version": "0.2.3",
+  "main": "lib/index.js",
+  "bin": {
+    "coat": "bin/coat.js"
+  },
+  "scripts": {
+    "build": "browserify src/index.js -o build/coat.js -s coat",
+    "prebuild": "mkdir -p build",
+    "postbuild": "cd build && uglifyjs coat.js -o coat.min.js --source-map coat.min.map",
+    "test": "node bin/coat.js test/test.html test/test.js",
+    "version": "npm run build && git add -A",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dailymuse/mithril-coat.git"
+  },
+  "dependencies": {
+    "browserify": "4.2.3",
+    "domhandler": "2.2.0",
+    "htmlparser2": "3.8.0",
+    "mithril": "0.2.0",
+    "mkdirp": "0.5.0",
+    "node-watch": "0.3.4",
+    "optimist": "0.6.1",
+    "pubsub-js": "^1.5.2",
+    "uglify-js": "2.4.15",
+    "underscore": "1.7.0"
+  },
+  "keywords": [
+    "frameworks",
+    "client",
+    "web",
+    "app",
+    "mithril",
+    "mvc"
+  ],
+  "homepage": "https://github.com/dailymuse/mithril-coat",
+  "license": "BSD",
+  "devDependencies": {
+    "jslint": "^0.7.2",
+    "qunitjs": "^1.16.0"
+  }
+}
