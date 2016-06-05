@@ -1,0 +1,21 @@
+<if expr="true">
+    <ul>
+        <map expr="controller.users" val="user" key="key">
+            <li><val expr="user" /></li>
+        </map>
+    </ul>
+</if>
+<elif expr="false">
+    should never show
+</elif>
+<!-- test -->
+<else>
+    also should never show
+    <raw expr="'<a href=\'#\'></a>'" />
+</else>
+
+<nbsp count="5" />
+<raw expr="'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'" />
+<template path="foo" />
+
+<view name="view.ButtonView" args="{state: state.subModel}" />
