@@ -39,6 +39,10 @@
 
 <style>
 
+.container {
+  width:90%;
+  margin:0 auto;
+}
 input[type="radio"] {
     display:none;
 }
@@ -83,6 +87,24 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
   padding:0;
   margin:0;
   opacity:0;
+}
+
+.tile {
+  width:23%;
+  height:100px;
+  float:left;
+  transition:all 1s;
+  margin:0.5%;
+  padding:0.5%;
+}
+.green {
+  background:#66dd99;
+}
+.blue {
+  background:#6666ff;
+}
+.red {
+  background:#ff4466;
 }
 </style>
 
@@ -189,509 +211,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<div>
-   <div class="filter-showing _4">
-      <div>
-         <div class="fix-filters">
-            <div class="filter-wrappers _4">
-               <h3>Filter Results</h3>
-               <div class="desktop-filter bright-orange">
-                  <input type="radio" id="blue" name="color" />
-  				  <label for="blue">BLUE</label>
-                     <div class="filter-options ">
-                        <div class="filter-name">Location<i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="desktop-filter bright-orange">
-                  <input type="radio" id="red" name="color"/>
-  				  <label for="red">RED</label>
-                     <div class="filter-options ">
-                        <div class="filter-name">Type<i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="desktop-filter bright-orange">
-                  <input type="radio" id="green" name="color"/>
-  				  <label for="green">GREEN</label>
-                     <div class="filter-options ">
-                        <div class="filter-name">Size<i class="fa fa-caret-down" aria-hidden="true"></i></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="keyword-wrapper">
-                  <div>
-                     <form>
-                        <label>Search Jobs</label>
-                        <div class="keyword-input">
-                           <i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="Company Type, Keywords or Company Name">
-                           <div class="autocomplete-wrapper"></div>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+<div class="container"> 
+  <input type="radio" id="blue" name="color" />
+  <label for="blue">BLUE</label>
+  <input type="radio" id="red" name="color"/>
+  <label for="red">RED</label>
+  <input type="radio" id="green" name="color"/>
+  <label for="green">GREEN</label>
+  <input type="radio" id="reset" name="color"/>
+  <label for="reset">RESET</label>
 
-
-
-
-      <div>
-         <section class="listing-section" id="listing">
-            <div class="listing-header">
-               <h1 class="section-header">All Companies</h1>
-            </div>
-            <div>
-               <div class="block">
-                  <div>
-                     <div id="list-anchor" class="list_items">
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/thumbtack" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F351%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - Thumbtack"></div>
-                                    <div class="tile-copy">
-                                       <h2>Thumbtack</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Consumer , Tech<span>|</span></li>
-                                          <li class="field_company_size">Medium Size<span>|</span></li>
-                                          <li class="field_company_location">San Francisco Bay Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/annelewisstrategies" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F698%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - Anne Lewis Strategies"></div>
-                                    <div class="tile-copy">
-                                       <h2>Anne Lewis Strategies</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Social Good<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">Washington DC Metro Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/comcast" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F304%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - Comcast"></div>
-                                    <div class="tile-copy">
-                                       <h2>Comcast</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Education , Media , Telecom<span>|</span></li>
-                                          <li class="field_company_size">Large Size<span>|</span></li>
-                                          <li class="field_company_location">Philadelphia, PA</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/aol" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F57%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - AOL"></div>
-                                    <div class="tile-copy">
-                                       <h2>AOL</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Media<span>|</span></li>
-                                          <li class="field_company_size">Large Size<span>|</span></li>
-                                          <li class="field_company_location">New York City Metro Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/cloudpassage" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F584%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - CloudPassage"></div>
-                                    <div class="tile-copy">
-                                       <h2>CloudPassage</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Tech<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">San Francisco Bay Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/verabradley" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F873%2Ff1.jpg%3Fv%3D98666fd8240b05d4e67a01bd389d7243a4e5afaffabaea4ffae0d5dc1105c872&amp;h=295&amp;w=400" alt="Companies Now Hiring - Vera Bradley"></div>
-                                    <div class="tile-copy">
-                                       <h2>Vera Bradley</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Consumer , Fashion and Beauty<span>|</span></li>
-                                          <li class="field_company_size">Large Size<span>|</span></li>
-                                          <li class="field_company_location">Fort Wayne, IN</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/slack" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F628%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - Slack"></div>
-                                    <div class="tile-copy">
-                                       <h2>Slack</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Tech<span>|</span></li>
-                                          <li class="field_company_size">Medium Size<span>|</span></li>
-                                          <li class="field_company_location">San Francisco Bay Area, Vancouver, Canada</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/mainstreethub" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F889%2Ff1.jpg%3Fv%3Dad048c7d0b9cabea13827182fd629f74f42abd0b53b47b5fd9f3108215a8569c&amp;h=295&amp;w=400" alt="Companies Now Hiring - Main Street Hub"></div>
-                                    <div class="tile-copy">
-                                       <h2>Main Street Hub</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Advertising and Agencies , Social Media<span>|</span></li>
-                                          <li class="field_company_size">Large Size<span>|</span></li>
-                                          <li class="field_company_location">New York City Metro Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/openmarket" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F720%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - OpenMarket"></div>
-                                    <div class="tile-copy">
-                                       <h2>OpenMarket</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Tech<span>|</span></li>
-                                          <li class="field_company_size">Medium Size<span>|</span></li>
-                                          <li class="field_company_location">Seattle, WA</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/penskemotorgroup" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F713%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - Penske Motor Group"></div>
-                                    <div class="tile-copy">
-                                       <h2>Penske Motor Group</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Consumer<span>|</span></li>
-                                          <li class="field_company_size">Large Size<span>|</span></li>
-                                          <li class="field_company_location">Los Angeles, CA, San Francisco Bay Area, Silicon Valley, CA</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/imedicare" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F775%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - iMedicare"></div>
-                                    <div class="tile-copy">
-                                       <h2>iMedicare</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Healthcare<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">New York City Metro Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/thetriumgroup" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F615%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - The Trium Group"></div>
-                                    <div class="tile-copy">
-                                       <h2>The Trium Group</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Client Services<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">San Francisco Bay Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/useed" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F544%2Ff1.jpg%3Fv%3D2adb767c53c65fad9c3786489c837c0839ba0d65e49c99c2b8124f73a4be0154&amp;h=295&amp;w=400" alt="Companies Now Hiring - USEED"></div>
-                                    <div class="tile-copy">
-                                       <h2>USEED</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Finance , Tech<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">Phoenix, AZ</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/clara" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F931%2Ff1.jpg%3Fv%3Df69a4f8a7c29a2d3e2b4adcac8b8aad498f1bf8db37590c9d9731df928de697f&amp;h=295&amp;w=400" alt="Companies Now Hiring - Clara"></div>
-                                    <div class="tile-copy">
-                                       <h2>Clara</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Client Services , Finance<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">San Francisco Bay Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/phoenixenergy" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F759%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - Phoenix Energy"></div>
-                                    <div class="tile-copy">
-                                       <h2>Phoenix Energy</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Consumer<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">New York City Metro Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/mobileforming" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F832%2Ff1.jpg%3Fv%3Ddad19f9879757078b80d02021fe6264c51064dc3b098d72f843512665b3f7d6b&amp;h=295&amp;w=400" alt="Companies Now Hiring - mobileforming"></div>
-                                    <div class="tile-copy">
-                                       <h2>mobileforming</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Client Services , Tech<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">Los Angeles, CA</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/northropgrumman" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F792%2Ff1.jpg%3Fv%3D4e90fb485420faa109566a95b106dc6f2e24bc7e99c66a48d30619a7f3a5bcb8&amp;h=295&amp;w=400" alt="Companies Now Hiring - Northrop Grumman"></div>
-                                    <div class="tile-copy">
-                                       <h2>Northrop Grumman</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Tech<span>|</span></li>
-                                          <li class="field_company_size">Large Size<span>|</span></li>
-                                          <li class="field_company_location">Baltimore, MD, Washington DC Metro Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/tresta" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F868%2Ff1.jpg%3Fv%3Dd0d02d8ca12bee433abd6cbf55ed339e60906f08d11b1c0594f3af8bde33ec69&amp;h=295&amp;w=400" alt="Companies Now Hiring - Tresta"></div>
-                                    <div class="tile-copy">
-                                       <h2>Tresta</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Tech , Telecom<span>|</span></li>
-                                          <li class="field_company_size">Small Size<span>|</span></li>
-                                          <li class="field_company_location">Tallahassee, FL</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/tomtom" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F709%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - TomTom"></div>
-                                    <div class="tile-copy">
-                                       <h2>TomTom</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Consumer , Tech<span>|</span></li>
-                                          <li class="field_company_size">Large Size<span>|</span></li>
-                                          <li class="field_company_location">Boston Metro Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/belly" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F714%2Ff1.jpg&amp;h=295&amp;w=400" alt="Companies Now Hiring - Belly"></div>
-                                    <div class="tile-copy">
-                                       <h2>Belly</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Consumer , Tech<span>|</span></li>
-                                          <li class="field_company_size">Medium Size<span>|</span></li>
-                                          <li class="field_company_location">Chicago, IL</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                              <div class="element company-element">
-                                 <a href="/companies/signpost" data-tile-link="true" target="_self">
-                                    <div class="tile-bg"><img src="https://tm-pilbox.global.ssl.fastly.net?url=https%3A%2F%2Ftm-prod.global.ssl.fastly.net%2Fuploaded%2Fcompanies%2F844%2Ff1.jpg%3Fv%3D787cd32f7d89fabf4c5402b4eae41210dd13c46c8add8bba29f6359dcaa9e324&amp;h=295&amp;w=400" alt="Companies Now Hiring - Signpost"></div>
-                                    <div class="tile-copy">
-                                       <h2>Signpost</h2>
-                                       <ul class="metadata">
-                                          <li class="field_company_type">Tech<span>|</span></li>
-                                          <li class="field_company_size">Medium Size<span>|</span></li>
-                                          <li class="field_company_location">Austin, TX, Denver, CO, New York City Metro Area</li>
-                                       </ul>
-                                    </div>
-                                 </a>
-                                 <div class="favorite-container">
-                                    <div><a href="#" class="favorite" data-original-title="" title=""><i class="fa fa-heart-o"></i></a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div>
-                  <div class="pagination-wrapper">
-                     <div class="pagination-container">
-                        <ul class="pagination">
-                           <li><span class="page-prev-link"><i class="fa fa-chevron-left"></i></span></li>
-                           <li class="circle-wrapper"><span class="circle">1</span></li>
-                           <li><a class="page-link" href="/companies?filter=true&amp;page=2">2</a></li>
-                           <li><a class="page-link" href="/companies?filter=true&amp;page=3">3</a></li>
-                           <li><a class="page-link" href="/companies?filter=true&amp;page=4">4</a></li>
-                           <li><a class="page-link" href="/companies?filter=true&amp;page=5">5</a></li>
-                           <li><a class="page-link" href="/companies?filter=true&amp;page=6">6</a></li>
-                           <li><span>...</span></li>
-                           <li><a class="page-link" href="/companies?filter=true&amp;page=23">23</a></li>
-                           <li><a class="page-next-link" href="/companies?filter=true&amp;page=2"><i class="fa fa-chevron-right"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="full-width back-to-browse"><a class="browse-cta browse" href="/companies">Browse More Companies</a></section>
-      </div>
-   </div>
+  <div class="tile blue">1</div>
+  <div class="tile red">2</div>
+  <div class="tile blue">3</div>
+  <div class="tile green">4</div>
+  <div class="tile blue">5</div>
+  <div class="tile red">6</div>
+  <div class="tile red">7</div>
+  <div class="tile green">8</div>
+  <div class="tile blue">9</div>
+  <div class="tile green">10</div>
+  <div class="tile red">11</div>
+  <div class="tile green">12</div>
+  <div class="tile blue">13</div>
+  <div class="tile blue">14</div>
+  <div class="tile green">15</div>
+  <div class="tile red">16</div>
 </div>
 
 
