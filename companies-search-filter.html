@@ -71,34 +71,14 @@ label {
   color:#32c0c6;
   padding:0.5%;
   margin:0.5%;
-  margin-top:50px;
+  margin-top:40px;
 
   cursor:pointer;
 }
-input[type="radio"][id="blue"]:checked + label {
+input[type="radio"][id="nsw"]:checked + label {
   background:#6666ff;
 }
-input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .green {
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
-}
-input[type="radio"][id="red"]:checked + label {
-  background:#ff4466;
-}
-input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .green {
-  width:0;
-  height:0;
-  padding:0;
-  margin:0;
-  opacity:0;
-}
-input[type="radio"][id="green"]:checked + label {
-  background:#66dd99;
-}
-input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]:checked ~ .red {
+input[type="radio"][id="nsw"]:checked ~ .vic, input[type="radio"][id="nsw"]:checked ~ .qld, input[type="radio"][id="nsw"]:checked ~ .sa, input[type="radio"][id="nsw"]:checked ~ .tas, input[type="radio"][id="nsw"]:checked ~ .nt {
   width:0;
   height:0;
   padding:0;
@@ -106,6 +86,61 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
   opacity:0;
 }
 
+input[type="radio"][id="vic"]:checked + label {
+  background:#6666ff;
+}
+input[type="radio"][id="vic"]:checked ~ .qld, input[type="radio"][id="vic"]:checked ~ .sa, input[type="radio"][id="vic"]:checked ~ .tas, input[type="radio"][id="vic"]:checked ~ .nt, input[type="radio"][id="vic"]:checked ~ .nsw {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="qld"]:checked + label {
+  background:#6666ff;
+}
+input[type="radio"][id="qld"]:checked ~ .sa, input[type="radio"][id="qld"]:checked ~ .tas, input[type="radio"][id="qld"]:checked ~ .nt, input[type="radio"][id="qld"]:checked ~ .nsw, input[type="radio"][id="qld"]:checked ~ .vic {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+
+input[type="radio"][id="sa"]:checked + label {
+  background:#6666ff;
+}
+input[type="radio"][id="sa"]:checked ~ .tas, input[type="radio"][id="sa"]:checked ~ .nt, input[type="radio"][id="sa"]:checked ~ .nsw, input[type="radio"][id="sa"]:checked ~ .vic, input[type="radio"][id="sa"]:checked ~ .qld {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="tas"]:checked + label {
+  background:#6666ff;
+}
+input[type="radio"][id="tas"]:checked ~ .nt, input[type="radio"][id="tas"]:checked ~ .nsw, input[type="radio"][id="tas"]:checked ~ .vic, input[type="radio"][id="tas"]:checked ~ .qld, input[type="radio"][id="tas"]:checked ~ .sa {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="nt"]:checked + label {
+  background:#6666ff;
+}
+input[type="radio"][id="nt"]:checked ~ .nsw, input[type="radio"][id="nt"]:checked ~ .vic, input[type="radio"][id="nt"]:checked ~ .qld, input[type="radio"][id="nt"]:checked ~ .sa, input[type="radio"][id="nt"]:checked ~ .tas {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
 
 
 
@@ -219,18 +254,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div style="clear: both"></div>
 
 <section class="filter listing-section" id="listing"> 
-  <input type="radio" id="blue" name="color" />
-  <label for="blue">NSW COMPANIES</label>
-  <input type="radio" id="red" name="color"/>
-  <label for="red">VIC COMPANIES</label>
-  <input type="radio" id="green" name="color"/>
-  <label for="green">QLD COMPANIES</label>
+  <input type="radio" id="nsw" name="color" />
+  <label for="nsw">NSW COMPANIES</label>
+  <input type="radio" id="vic" name="color"/>
+  <label for="vic">VIC COMPANIES</label>
+  <input type="radio" id="qld" name="color"/>
+  <label for="qld">QLD COMPANIES</label>
+  <input type="radio" id="sa" name="color"/>
+  <label for="sa">SA COMPANIES</label>
+  <input type="radio" id="tas" name="color"/>
+  <label for="tas">TAS COMPANIES</label>
+  <input type="radio" id="nt" name="color"/>
+  <label for="nt">NT COMPANIES</label>
   <input type="radio" id="reset" name="color"/>
-  <label for="reset">SA COMPANIES</label>
-  <input type="radio" id="reset" name="color"/>
-  <label for="reset">TAS COMPANIES</label>
-  <input type="radio" id="reset" name="color"/>
-  <label for="reset">NT COMPANIES</label>
+  <label for="reset">ALL COMPANIES</label>
 
   <div style="clear: both"></div>
 
