@@ -6,13 +6,8 @@
 
 <script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js" data-apikey="f4f8fd4171168deeb1bedfe21a8a17cc">
 </script>
-<script>
-if (window.Bugsnag) {
 
-Bugsnag.releaseStage = "production";
-
-}
-</script>
+<!-- window.Bugsnag script code -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -54,19 +49,19 @@ Bugsnag.releaseStage = "production";
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen, projection">
 <link href="css/chosen.min.css" rel="stylesheet" media="screen, projection">
 <link href="css/font-awesome.min.css" rel="stylesheet" media="screen, projection">
+<link href="css/font-awesome.css" rel="stylesheet" media="screen, projection">
+<link href="css/font-awesome.min.css" rel="stylesheet" media="screen, projection">
 <link href="css/company-profile.css" rel="stylesheet" media="screen, projection">
 <link href="css/bootstrap-social.css" rel="stylesheet" media="screen, projection">
 
 <script type="text/javascript">
-var muse = {
+var youenrol = {
 auth: false
 };
-var metadata = {
-pilbox_host: "https://tm-pilbox.global.ssl.fastly.net"
-};
+var metadata = {"error_code": 8, "status_code": 400, "error": "Missing url"};
 
 
-var hideBx = muse.auth;
+var hideBx = youenrol.auth;
 
 </script>
 <!-- For Windows Phone 8 and Internet Explorer 10 -->
@@ -79,42 +74,20 @@ document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
 </script>
 
 <script type="text/javascript">
-(function(e,t){var n=e.amplitude||{};var r=t.createElement("script");r.type="text/javascript";r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-2.9.0-min.gz.js";r.onload=function(){e.amplitude.runQueuedFunctions()};var s=t.getElementsByTagName("script")[0];s.parentNode.insertBefore(r,s);var i=function(){this._q=[];return this};function a(e){i.prototype[e]=function(){this._q.push([e].concat(Array.prototype.slice.call(arguments,0)));return this}}var o=["add","append","clearAll","set","setOnce","unset"];for(var c=0;c<o.length;c++){a(o[c])}n.Identify=i;n._q=[];function u(e){n[e]=function(){n._q.push([e].concat(Array.prototype.slice.call(arguments,0)));}}var l=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties"];for(var p=0;p<l.length;p++){u(l[p])}e.amplitude=n})(window,document);
+(function(e,t){var n=e.amplitude||{};var r=t.createElement("script");r.type="text/javascript";r.async=true;r.src="js/amplitude-2.9.0-min.gz.js";r.onload=function(){e.amplitude.runQueuedFunctions()};var s=t.getElementsByTagName("script")[0];s.parentNode.insertBefore(r,s);var i=function(){this._q=[];return this};function a(e){i.prototype[e]=function(){this._q.push([e].concat(Array.prototype.slice.call(arguments,0)));return this}}var o=["add","append","clearAll","set","setOnce","unset"];for(var c=0;c<o.length;c++){a(o[c])}n.Identify=i;n._q=[];function u(e){n[e]=function(){n._q.push([e].concat(Array.prototype.slice.call(arguments,0)));}}var l=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties"];for(var p=0;p<l.length;p++){u(l[p])}e.amplitude=n})(window,document);
 amplitude.init("eab2907880b5d9bfecc4330a615b5031", null, {
 includeUtm: true,
 includeReferrer: true
 });
 
 
-amplitude.identify(new amplitude.Identify().set("signed_in", muse.auth));
+amplitude.identify(new amplitude.Identify().set("signed_in", youenrol.auth));
 
 try {
-muse.track = amplitude.logEvent;
+youenrol.track = amplitude.logEvent;
 } catch (e) {
-muse.track = function() {};
+youenrol.track = function() {};
 }
-</script>
-
-
-<script type="text/javascript">
-window._blueshiftid='2d0f7ad273b98bdcb498e420b8acde6a';window.blueshift=window.blueshift||[];if(blueshift.constructor===Array){blueshift.load=function(){var d=function(a){return function(){blueshift.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track","click","pageload","capture","retarget"];for(var f=0;f<e.length;f++)blueshift[e[f]]=d(e[f])};}
-blueshift.load();
-blueshift.retarget();
-blueshift.pageload();
-if(blueshift.constructor===Array){(function(){var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.getblueshift.com/blueshift.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);})()}
-var __bsftId = window.location.search.match(/(?:bsft_uid)=(.+)/),
-bsProps = {};
-if (__bsftId) {
-// in js the first item is the whole matching group, the
-// second item is the specific match
-bsProps.bsft_uid = __bsftId[1];
-}
-
-
-if (Object.keys(bsProps).length > 0) {
-blueshift.identify(bsProps);
-}
-
 </script>
 
 <script type="text/javascript">
@@ -122,33 +95,22 @@ blueshift.identify(bsProps);
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-29372519-1', 'themuse.com');
+ga('create', 'UA-76806254-1', 'youenrol.me');
 ga('send', 'pageview');
 </script>
 
-<script>
-(function(d) {
-var e = d.createElement('script');
-e.src = d.location.protocol + '//bounceexchange.com/tag/473/i.js';
-e.async = true;
-d.getElementsByTagName("head")[0].appendChild(e);
-}(document));
-</script><script src="https://bounceexchange.com/tag/473/i.js" async=""></script>
 
-
-<link href="https://tm-prod.global.ssl.fastly.net/etc/bootstrap-social.css?v=None" type="text/css" rel="stylesheet">
-<script src="https://api.bounceexchange.com/bounce/init1.js?tojQ=function&amp;cts=1462884924101&amp;tzo=-600&amp;is_preview=false&amp;website_id=473&amp;resolution=2016x1242&amp;referrer=www.themuse.com&amp;is_google_pla=0&amp;calling_url=https%3A%2F%2Fwww.themuse.com%2Fcompanies%2Ftaboola%2Fpeople%2Fchris&amp;visit_cookie=%7B%22lp%22%3A%22https%253A%252F%252Fwww.themuse.com%252Fcompanies%252Ftaboola%252Fpeople%252Fchris%22%2C%22r%22%3A%22www.themuse.com%22%7D&amp;cookie=%7B%22v%22%3A%7B%22has_watchlist%22%3Afalse%7D%2C%22sid%22%3A29%2C%22fvt%22%3A1462757946%2C%22vid%22%3A1462882680797877%2C%22ao%22%3A4%2C%22as%22%3A0%2C%22vpv%22%3A7%2C%22d%22%3A%22d%22%2C%22lp%22%3A%22https%253A%252F%252Fwww.themuse.com%252Fcompanies%252Ftaboola%252Foffice%252Foffice%22%2C%22r%22%3A%22www.themuse.com%22%2C%22cvt%22%3A1462882680%2C%22gcr%22%3A51%2C%22m%22%3A0%2C%22did%22%3A%223116773139814116583%22%2C%22lvt%22%3A1462882761%2C%22campaigns%22%3A%7B%2264344%22%3A%7B%22lvt%22%3A1462757609%2C%22lavid%22%3A1%2C%22la%22%3A1462757609%2C%22fsa%22%3A1462757609%2C%22as%22%3A1%2C%22ao%22%3A1%2C%22wc%22%3A1462757623%7D%2C%22165467%22%3A%7B%22lvt%22%3A1462882761%2C%22lavid%22%3A1%2C%22vv%22%3A7%7D%2C%22165931%22%3A%7B%22lvt%22%3A1462850596%2C%22lavid%22%3A1%2C%22la%22%3A1462850596%2C%22fsa%22%3A1462850596%2C%22as%22%3A1%2C%22ao%22%3A1%7D%2C%22166147%22%3A%7B%22lvt%22%3A1462882761%2C%22lavid%22%3A1%2C%22vv%22%3A7%7D%2C%22167321%22%3A%7B%22lvt%22%3A1462862030%2C%22lavid%22%3A1%2C%22la%22%3A1462862030%2C%22fsa%22%3A1462757265%2C%22as%22%3A4%2C%22ao%22%3A6%7D%2C%22179123%22%3A%7B%22lvt%22%3A1462847474%2C%22lavid%22%3A1%2C%22la%22%3A1462847474%2C%22fsa%22%3A1462757277%2C%22as%22%3A1%2C%22ao%22%3A2%2C%22wc%22%3A1462847479%7D%2C%22267861%22%3A%7B%22lvt%22%3A1462757522%2C%22lavid%22%3A1%2C%22la%22%3A1462757522%2C%22fsa%22%3A1462757449%2C%22as%22%3A2%2C%22ao%22%3A2%2C%22lclk%22%3A1462757560%7D%2C%22267891%22%3A%7B%22lvt%22%3A1462882761%2C%22lavid%22%3A1%2C%22la%22%3A1462757584%2C%22fsa%22%3A1462757560%2C%22as%22%3A0%2C%22ao%22%3A2%2C%22wc%22%3A1462757591%2C%22vv%22%3A7%7D%7D%7D&amp;vars[logged_in]=false&amp;vars[has_header_image]=false&amp;vars[hide_bx]=false&amp;vars[waypoints_lib]=false&amp;vars[waypoints_module_elements]=false&amp;vars[waypoints_module_scroll]=false&amp;vars[has_watchlist]=false&amp;vdef[has_watchlist]=false" type="text/javascript"></script><link href="//assets.bounceexchange.com/assets/bounce/css/bouncev2.be08a76c52.css" id="bcx_stylesheet" rel="stylesheet" media="all" type="text/css"><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
-.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+</head>
 <body><div id="lightningjs-wootric" style="display: none;"><div><iframe frameborder="0" id="lightningjs-frame-wootric"></iframe></div></div>
 
 <!-- Google Tag Manager -->
-<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-P3K3QB" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WTR32F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P3K3QB');</script>
+})(window,document,'script','dataLayer','GTM-WTR32F');</script>
 <!-- End Google Tag Manager -->
 
 
@@ -181,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <a data-header-link="home" class="hidden-xs " href="play-game-about.html">Play Game</a>
 <!--<a data-header-link="careers" class="" href="careers.html">Careers</a>-->
 <a data-header-link="paths" class="" href="career-paths.html">Career Paths</a>
-<a data-header-link="companies" class="" href="/companies">Explore Companies</a>
+<a data-header-link="companies" class="active" href="explore-companies.html">Explore Companies</a>
 <a data-header-link="advice" class="" href="career-advice.html">Career Advice</a>
 <a data-header-link="coaching" class="" href="find-a-coach.html">Find A Coach</a>
 <a data-header-link="employers" class="employers-link" href="/employers"><span class="hidden-xs hidden-sm">Job </span>Search</a>
@@ -251,9 +213,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </div>
 </div>
-
-<div class="visible-xs" id="subnav-search"><div><div class="subnav-block top-nav fixed"><div class="container1260"><a href="/companies" class="browse"><div class="visible-xs"><img class="binoculars" src="https://tm-prod.global.ssl.fastly.net/images/svg/binoculars.svg?v=None" alt=""></div> Browse </a><a href="#search-filter" class="search">Search</a></div></div></div></div>
-
 
 
 
