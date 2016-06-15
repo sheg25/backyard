@@ -42,20 +42,25 @@ Bugsnag.notifyReleaseStages = ["production", "staging"];
 @viewport { width: device-width; }
 </style>
 
-<link integrity="sha256-8L2abxtgdmEQcu+yUzeGMrccZIBxBBozWYJHjTrPOqQ=" rel="stylesheet" crossorigin="anonymous" href="https://tm-prod.global.ssl.fastly.net/stylesheets/coach_connect_landing.css?v=f0bd9a6f1b6076611072efb253378632b71c648071041a335982478d3acf3aa4" media="screen, projection">
+<!--<link integrity="sha256-8L2abxtgdmEQcu+yUzeGMrccZIBxBBozWYJHjTrPOqQ=" rel="stylesheet" crossorigin="anonymous" href="https://tm-prod.global.ssl.fastly.net/stylesheets/coach_connect_landing.css?v=f0bd9a6f1b6076611072efb253378632b71c648071041a335982478d3acf3aa4" media="screen, projection">-->
+
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen, projection">
+<link href="css/chosen.min.css" rel="stylesheet" media="screen, projection">
+<link href="css/font-awesome.min.css" rel="stylesheet" media="screen, projection">
+<link href="css/font-awesome.css" rel="stylesheet" media="screen, projection">
+<link href="css/company-profile.css" rel="stylesheet" media="screen, projection">
+<link href="css/bootstrap-social.css" rel="stylesheet" media="screen, projection">
+<link href="css/explore-companies.css" rel="stylesheet" media="screen, projection">
+<link href="css/coach.css" rel="stylesheet" media="screen, projection">
 
 <script type="text/javascript">
-var muse = {
-
-experiments: {},
+var youenrol.me = {
 auth: false
 };
-var metadata = {
-pilbox_host: "https://tm-pilbox.global.ssl.fastly.net"
-};
+var metadata = {"error_code": 8, "status_code": 400, "error": "Missing url"};
 
 
-var hideBx = muse.auth;
+var hideBx = youenrol.me.auth;
 
 </script>
 <!-- For Windows Phone 8 and Internet Explorer 10 -->
@@ -68,74 +73,44 @@ document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
 </script>
 
 <script type="text/javascript">
-(function(e,t){var n=e.amplitude||{};var r=t.createElement("script");r.type="text/javascript";r.async=true;r.src="https://d24n15hnbwhuhn.cloudfront.net/libs/amplitude-2.9.0-min.gz.js";r.onload=function(){e.amplitude.runQueuedFunctions()};var s=t.getElementsByTagName("script")[0];s.parentNode.insertBefore(r,s);var i=function(){this._q=[];return this};function a(e){i.prototype[e]=function(){this._q.push([e].concat(Array.prototype.slice.call(arguments,0)));return this}}var o=["add","append","clearAll","set","setOnce","unset"];for(var c=0;c<o.length;c++){a(o[c])}n.Identify=i;n._q=[];function u(e){n[e]=function(){n._q.push([e].concat(Array.prototype.slice.call(arguments,0)));}}var l=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties"];for(var p=0;p<l.length;p++){u(l[p])}e.amplitude=n})(window,document);
+(function(e,t){var n=e.amplitude||{};var r=t.createElement("script");r.type="text/javascript";r.async=true;r.src="js/amplitude.js";r.onload=function(){e.amplitude.runQueuedFunctions()};var s=t.getElementsByTagName("script")[0];s.parentNode.insertBefore(r,s);var i=function(){this._q=[];return this};function a(e){i.prototype[e]=function(){this._q.push([e].concat(Array.prototype.slice.call(arguments,0)));return this}}var o=["add","append","clearAll","set","setOnce","unset"];for(var c=0;c<o.length;c++){a(o[c])}n.Identify=i;n._q=[];function u(e){n[e]=function(){n._q.push([e].concat(Array.prototype.slice.call(arguments,0)));}}var l=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties"];for(var p=0;p<l.length;p++){u(l[p])}e.amplitude=n})(window,document);
 amplitude.init("eab2907880b5d9bfecc4330a615b5031", null, {
 includeUtm: true,
 includeReferrer: true
 });
 
 
-amplitude.identify(new amplitude.Identify().set("signed_in", muse.auth));
+amplitude.identify(new amplitude.Identify().set("signed_in", youenrol.me.auth));
 
 try {
-muse.track = amplitude.logEvent;
+youenrol.me.track = amplitude.logEvent;
 } catch (e) {
-muse.track = function() {};
+youenrol.me.track = function() {};
 }
 </script>
 
 
-<script type="text/javascript">
-window._blueshiftid='2d0f7ad273b98bdcb498e420b8acde6a';window.blueshift=window.blueshift||[];if(blueshift.constructor===Array){blueshift.load=function(){var d=function(a){return function(){blueshift.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track","click","pageload","capture","retarget"];for(var f=0;f<e.length;f++)blueshift[e[f]]=d(e[f])};}
-blueshift.load();
-blueshift.retarget();
-blueshift.pageload();
-if(blueshift.constructor===Array){(function(){var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.getblueshift.com/blueshift.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);})()}
-var __bsftId = window.location.search.match(/(?:bsft_uid)=(.+)/),
-bsProps = {};
-if (__bsftId) {
-// in js the first item is the whole matching group, the
-// second item is the specific match
-bsProps.bsft_uid = __bsftId[1];
-}
-
-
-if (Object.keys(bsProps).length > 0) {
-blueshift.identify(bsProps);
-}
-
-</script>
 
 <script type="text/javascript">
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-29372519-1', 'themuse.com');
+ga('create', 'UA-76806254-1', 'youenrol.me');
 ga('send', 'pageview');
 </script>
 
-<script>
-(function(d) {
-var e = d.createElement('script');
-e.src = d.location.protocol + '//bounceexchange.com/tag/473/i.js';
-e.async = true;
-d.getElementsByTagName("head")[0].appendChild(e);
-}(document));
-</script><script src="https://bounceexchange.com/tag/473/i.js" async=""></script>
-
-
-<style type="text/css">#livechat-full {height: 440px !important;}</style><style type="text/css">#livechat-compact-container {    width: 550px!important;}
-#livechat-full{     height: 500px !important; }</style></head>
+</head>
 <body><div id="lightningjs-wootric" style="display: none;"><div><iframe frameborder="0" id="lightningjs-frame-wootric"></iframe></div></div>
 
 <!-- Google Tag Manager -->
-<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-P3K3QB" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WTR32F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P3K3QB');</script>
+})(window,document,'script','dataLayer','GTM-WTR32F');</script>
 <!-- End Google Tag Manager -->
 
 
@@ -459,7 +434,7 @@ Our master coaches have years of experience, have helped hundreds of clients ach
 </div>
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 var _sf_async_config={};
 /** CONFIGURATION START **/
 _sf_async_config.uid = 40833;
@@ -492,9 +467,9 @@ metadata.browse_icon_black = "https://tm-prod.global.ssl.fastly.net/images/svg/b
 <script type="text/javascript">
 metadata.all_offerings = [{"short_name": "resume-review", "name": "Resume Review", "id": 1}, {"short_name": "30-minute-career-consultation", "name": "30-Minute Career Q&A", "id": 2}, {"short_name": "job-search-strategy", "name": "Job Search Strategy", "id": 3}, {"short_name": "professional-networking-strategy", "name": "Networking Strategy", "id": 4}, {"short_name": "cover-letter-writing-services", "name": "Cover Letter Writing", "id": 5}, {"short_name": "linkedin-profile-writing-services", "name": "Resume + LinkedIn Review", "id": 6}, {"short_name": "interview-coaching", "name": "Interview Coaching", "id": 7}, {"short_name": "leadership-coaching", "name": "Leadership Coaching", "id": 8}, {"short_name": "salary-negotiation", "name": "Negotiation Coaching", "id": 9}]
 metadata.coaches_icon = "https://tm-prod.global.ssl.fastly.net/images/svg/coaches.svg?v=d616bf30d4d952fe3c93f0ceabcb8c0ffc4c96e845f368d94b086748a95a97a3";
-</script>
+</script>-->
 <!-- Start of LiveChat (www.livechatinc.com) code -->
-<script type="text/javascript">
+<!--<script type="text/javascript">
 window.__lc = window.__lc || {};
 window.__lc.license = 7078621;
 (function() {
@@ -503,10 +478,10 @@ lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cd
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
 })();
 
-</script>
+</script>-->
 <!-- End of LiveChat code -->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 muse.track("Coach Landing Page Loaded", {path: window.location.pathname});
 metadata.all_offerings = [{"short_name": "resume-review", "name": "Resume Review", "id": 1}, {"short_name": "30-minute-career-consultation", "name": "30-Minute Career Q&A", "id": 2}, {"short_name": "job-search-strategy", "name": "Job Search Strategy", "id": 3}, {"short_name": "professional-networking-strategy", "name": "Networking Strategy", "id": 4}, {"short_name": "cover-letter-writing-services", "name": "Cover Letter Writing", "id": 5}, {"short_name": "linkedin-profile-writing-services", "name": "Resume + LinkedIn Review", "id": 6}, {"short_name": "interview-coaching", "name": "Interview Coaching", "id": 7}, {"short_name": "leadership-coaching", "name": "Leadership Coaching", "id": 8}, {"short_name": "salary-negotiation", "name": "Negotiation Coaching", "id": 9}]
 </script>
@@ -539,4 +514,10 @@ if(window.wootricSettings){i=new Image;i.src="//d8myem934l1zi.cloudfront.net/pix
 
 
 
-<script src="https://secure.livechatinc.com/licence/7078621/script_data.js?t=1463107498851&amp;referrer=https%3A%2F%2Fwww.themuse.com%2Fcompanies%2Fprogressiveinsurance%3Fref%3Dcarousel-slide-0&amp;url=https%3A%2F%2Fwww.themuse.com%2Fcoaching&amp;params=&amp;jsonp=__lc_data_972137"></script><meta name="msvalidate.01" content="A528256CC277396847EB29C13CFE98D1"><script src="https://secure.livechatinc.com/licence/7078621/localization.en.0.3632191afe35222a6b78c04d457adc0d_5c014fa68ee2790a49faf46a15ecf71e.js?jsonp=__lc_lang"></script><div id="livechat-compact-container" style="position: fixed; bottom: 0px; right: 15px; width: 280px; height: 70px; overflow: hidden; visibility: hidden; z-index: 2147483639; border: 0px; transition: transform 0.2s ease-in-out; backface-visibility: hidden; opacity: 0; padding: 0px 15px; background: transparent;"><iframe src="javascript:false" id="livechat-compact-view" style="position: relative;top: 20px;left: 0;width: 100%;border: 0;padding: 0;margin: 0;float: none;background: none" scrolling="no" frameborder="0" allowtransparency="true"></iframe><a id="livechat-badge" href="#" onclick="LC_API.show_full_view();return false" style="position: absolute; display: block; visibility: hidden; height: 16px; line-height: 16px; color: rgb(255, 255, 255); font-size: 10px; text-decoration: none; width: 16px; border-radius: 50%; box-shadow: none; border-top-width: 0px; padding: 0px; text-align: center; font-family: Lato, sans-serif; top: 12px; left: 20px; opacity: 0; background: rgb(255, 0, 0);"></a></div><div id="livechat-full" style="position: fixed; bottom: 0px; right: 15px; width: 400px; height: 450px; overflow: hidden; visibility: hidden; z-index: -1; border: 0px; transition: transform 0.2s ease-in-out; backface-visibility: hidden; background: transparent;"><iframe src="https://secure.livechatinc.com/licence/7078621/open_chat.cgi?groups=0&amp;embedded=1&amp;session_id=S1462862034.440d914ddf#https://www.themuse.com/coaching" id="livechat-full-view" name="livechat-full-view" scrolling="no" frameborder="0" allowtransparency="true" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border: 0px; padding: 0px; margin: 0px; float: none; background: none;"></iframe></div><div id="lc_invite_layer" style="text-align: left; display: none; z-index: 16777261;"></div><div id="lc_overlay_layer" style="position: fixed; left: 0px; top: 0px; z-index: 16777260; display: none; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"></div><script id="livechat-ping" src="https://secure.livechatinc.com/licence/7078621/ping?t=1463107509879&amp;data=%7B%22visitor%22%3A%7B%22id%22%3A%22S1462862034.440d914ddf%22%7D%7D&amp;jsonp=__lc_ping_904996"></script></body></html>
+<script src="https://secure.livechatinc.com/licence/7078621/script_data.js?t=1463107498851&amp;referrer=https%3A%2F%2Fwww.themuse.com%2Fcompanies%2Fprogressiveinsurance%3Fref%3Dcarousel-slide-0&amp;url=https%3A%2F%2Fwww.themuse.com%2Fcoaching&amp;params=&amp;jsonp=__lc_data_972137"></script><meta name="msvalidate.01" content="A528256CC277396847EB29C13CFE98D1"><script src="https://secure.livechatinc.com/licence/7078621/localization.en.0.3632191afe35222a6b78c04d457adc0d_5c014fa68ee2790a49faf46a15ecf71e.js?jsonp=__lc_lang"></script><div id="livechat-compact-container" style="position: fixed; bottom: 0px; right: 15px; width: 280px; height: 70px; overflow: hidden; visibility: hidden; z-index: 2147483639; border: 0px; transition: transform 0.2s ease-in-out; backface-visibility: hidden; opacity: 0; padding: 0px 15px; background: transparent;"><iframe src="javascript:false" id="livechat-compact-view" style="position: relative;top: 20px;left: 0;width: 100%;border: 0;padding: 0;margin: 0;float: none;background: none" scrolling="no" frameborder="0" allowtransparency="true"></iframe><a id="livechat-badge" href="#" onclick="LC_API.show_full_view();return false" style="position: absolute; display: block; visibility: hidden; height: 16px; line-height: 16px; color: rgb(255, 255, 255); font-size: 10px; text-decoration: none; width: 16px; border-radius: 50%; box-shadow: none; border-top-width: 0px; padding: 0px; text-align: center; font-family: Lato, sans-serif; top: 12px; left: 20px; opacity: 0; background: rgb(255, 0, 0);"></a></div><div id="livechat-full" style="position: fixed; bottom: 0px; right: 15px; width: 400px; height: 450px; overflow: hidden; visibility: hidden; z-index: -1; border: 0px; transition: transform 0.2s ease-in-out; backface-visibility: hidden; background: transparent;"><iframe src="https://secure.livechatinc.com/licence/7078621/open_chat.cgi?groups=0&amp;embedded=1&amp;session_id=S1462862034.440d914ddf#https://www.themuse.com/coaching" id="livechat-full-view" name="livechat-full-view" scrolling="no" frameborder="0" allowtransparency="true" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; border: 0px; padding: 0px; margin: 0px; float: none; background: none;"></iframe></div><div id="lc_invite_layer" style="text-align: left; display: none; z-index: 16777261;"></div><div id="lc_overlay_layer" style="position: fixed; left: 0px; top: 0px; z-index: 16777260; display: none; width: 100%; height: 100%; background-color: rgb(0, 0, 0);"></div><script id="livechat-ping" src="https://secure.livechatinc.com/licence/7078621/ping?t=1463107509879&amp;data=%7B%22visitor%22%3A%7B%22id%22%3A%22S1462862034.440d914ddf%22%7D%7D&amp;jsonp=__lc_ping_904996"></script>-->
+
+<script>
+youenrol.track("Company Landing Page Loaded");
+</script>
+
+</body></html>
