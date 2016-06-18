@@ -4,9 +4,8 @@ YOUENROL.ME
 YouEnrol.me is website that provides career advice, information and guidance to young people. The service is based in Sydney Australia so its primary focus will be the Australian market. However, users from outside Australia will find some of the services and information offered by YouEnrol.me useful. Youenrol.me provides the following:
 
 1. a real time career-matching game
-2. information about different types of careers careers
-3. exploring company profiles (potential employers) and the jobs they offer
-4. exploring career pathways such as: colleges & universities, apprenticeship & traineeship, volunteering, work experience, jobs, starting a business
+2. information about different types of careers
+4. exploring study options with colleges & universities
 5. access to one-on-one sessions with professional career coaches
 
 CHALLENGES:
@@ -28,12 +27,6 @@ INDEX.HTML:
 
 1. add an email capture pop-up modal to the hompage that pops up when users want to leave the site - this should also appear on all other pages.
 
-CAREER-PATHS.HTML:
-
-1. carousel sllder at the top of the page should scroll and have two side-by-side frames as seen here https://www.themuse.com/companies and not one frame as it's currently showing on the page
-2. Add filter results function as seen at the top of this page https://www.themuse.com/companies?filter=true - substitute this for the search and filter function currently shown on the career-paths.html page
-3. Activate the favouriting feature (with the love heart) - this is enabled after users register or login
-4. Set up the Register and Login function - this will also involve setting up the backend service needed for this function
 
 CAREERS.HTML:
 
@@ -42,7 +35,7 @@ CAREERS.HTML:
 3. Set up the Register and Login function - this will also involve setting up the backend service needed for this function
 4. Change the 'show me more' function to another function that achieves the same result if possible
 
-EXPLORE-COMPANIES.HTML:
+COLLEGES-UNIVERSITIES.HTML:
 
 1. carousel sllder at the top of the page should scroll and have two side-by-side frames as seen here https://www.themuse.com/companies and not one frame as it's currently showing on the page
 2. Add filter results function as seen at the top of this page https://www.themuse.com/companies?filter=true - substitute this for the search and filter function currently shown on the career-paths.html page
@@ -72,24 +65,6 @@ FIND-A-COACH.HTML:
 6. Create individual coaches page like this https://www.themuse.com/coaches/becky-berry
 7. Create coaching gift packages page like this https://www.themuse.com/gift-of-coaching
 
-JOBS.HTML
-
-1. carousel sllder at the top of the page should scroll and have two side-by-side frames as seen here https://www.themuse.com/companies and not one frame as it's currently showing on the page
-2. Add filter results function as seen at the top of this page https://www.themuse.com/companies?filter=true - substitute this for the search and filter function currently shown on the career-paths.html page
-3. Activate the favouriting feature (with the love heart) - this is enabled after users register or login
-4. Set up the Register and Login function - this will also involve setting up the backend service needed for this function
-5. Add jobs by under different categories by location
-6. Activate the 'show me more' function under each category. A similar function is already working on the careers.html page but feel free to make a better one if possible
-7. Activate the 'show all jobs' function
-8. Jobs content is pulled from the jobs section for each company - see the company-profile-jobs.html file or https://www.themuse.com/jobs/c-cloudpassage-jobs
-
-COMPANY-PROFILE-JOBS.HTML:
-
-1. Add filter results function as seen at the top of this page https://www.themuse.com/companies?filter=true - substitute this for the search and filter function currently shown on the career-paths.html page
-2. Activate the favouriting feature (with the love heart) - this is enabled after users register or login
-3. Set up the Register and Login function - this will also involve setting up the backend service needed for this function
-4. Change the 'show me more' function to another function that achieves the same result if possible
-5. Create pages for each job page e.g.https://www.themuse.com/jobs/cloudpassage/senior-devops-engineer-013c95 and show similar jobs at the bottom of the page
 
 OTHER PAGES TO BE CREATED:
 
