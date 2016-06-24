@@ -46,6 +46,46 @@ Bugsnag.notifyReleaseStages = ["production", "staging"];
 <link rel="stylesheet" crossorigin="anonymous" media="screen, projection" href="https://tm-prod.global.ssl.fastly.net/lib/chosen/chosen.min.css?v=None">
 <link integrity="sha256-AZOBEx1yzzBJvVVpIjgZ7/mKCSTEuvWiySFuJuwucpU=" rel="stylesheet" crossorigin="anonymous" media="screen, projection" href="https://tm-prod.global.ssl.fastly.net/stylesheets/museone.css?v=019381131d72cf3049bd5569223819eff98a0924c4baf5a2c9216e26ec2e7295">
 
+<!-- scroll to top for "see more" function -->
+<style>
+
+.expand{
+	display: none;
+}
+
+.browse-section #loadMore {
+    padding: 10px 18px;
+    float: left;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    font-family: "ProximaBold", Helvetica, sans-serif;
+    color: #32c0c6;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+.totop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.totop a {
+    display: none;
+}
+
+.totop a:visited {
+    color: #33739E;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+.totop a:hover {
+    text-decoration: none;
+}
+
+</style>
+
 <script type="text/javascript">
 var muse = {
 
